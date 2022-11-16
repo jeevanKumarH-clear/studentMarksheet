@@ -1,7 +1,23 @@
 .App {
 	text-align: center;
-
-	button {
-		font-weight: bold;
-	}
 }
+
+.tableStyle {
+	border: 2px solid black;
+	width: 200px;
+	margin: auto;
+}
+
+.rowStyle {
+	border: 2px solid black;
+	width: 100px;
+	background: lightcyan;
+}
+
+.headerStyle {
+	font-size: 25px;
+	border: 2px solid black;
+	background: antiquewhite;
+	text-align: center;
+	color: black;
+};
