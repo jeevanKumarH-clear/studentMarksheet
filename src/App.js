@@ -1,7 +1,7 @@
 import { React } from 'react';
 import './App.scss';
-import SimpleStyles from './service/components/simpleStyles';
+import SimpleTable from './service/components/simpleTable';
 
-const App = () => <SimpleStyles/>;
+const App = () => <SimpleTable/>;
 
 export default App;
