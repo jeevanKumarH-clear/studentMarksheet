@@ -1,3 +1,4 @@
+/* eslint-disable max-lines-per-function */
 /* eslint-disable max-len */
 import { React } from 'react';
 import marks from '../marksheets/marksheets';
@@ -35,14 +36,14 @@ const headerStyle = {
 
 const titleStyle = {
 	background: 'lemonchiffon',
-	borderTop: '3px outset aquamarine',
-	height: '30px',
+	height: '45px',
 	color: 'indigo',
 	font: 'verdana',
-	border: '2px solid purple',
-	fontSize: '25px',
-	wordSpacing: '84px',
-	paddingLeft: '149px',
+	border: '6px outset plum',
+	fontSize: '30px',
+	wordSpacing: '50px',
+	paddingLeft: '70px',
+	marginTop: '50px',
 };
 
 const SimpleStyles = () => {
@@ -62,7 +63,15 @@ const SimpleStyles = () => {
 
 	return <div>
 		<div style={ headerStyle }><h1>Marksheet</h1></div>
-		<div style={ titleStyle }>RollNo Name Tamil English Maths Science Social </div>
+		<div style={ titleStyle }>
+			<span style={ numberColumnStyle }>RollNo</span>
+			<span style={ textColumnStyle }>Name</span>
+			<span style={ numberColumnStyle }>Tamil</span>
+			<span style={ numberColumnStyle }>English</span>
+			<span style={ numberColumnStyle }>Maths</span>
+			<span style={ numberColumnStyle }>Science</span>
+			<span style={ numberColumnStyle }>Social</span>
+		</div>
 		<div>{lines}</div>;
 	</div>;
 };
