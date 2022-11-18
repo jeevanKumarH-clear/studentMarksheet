@@ -1,7 +1,7 @@
 /* eslint-disable max-lines-per-function */
 /* eslint-disable max-len */
 import { React } from 'react';
-import marks from '../marksheets/marksheets';
+import marks from '../service/markSheets';
 
 const rowStyle = {
 	background: 'bisque',

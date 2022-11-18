@@ -1,4 +1,4 @@
-const marks = [
+const markSheets = [
 	{
 		rollNo: 1,
 		name: 'A',
@@ -118,4 +118,4 @@ const marks = [
 	},
 ];
 
-export default marks;
+export default markSheets;
