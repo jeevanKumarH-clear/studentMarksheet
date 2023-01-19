@@ -1,5 +1,5 @@
+import { peek } from '@laufire/utils/debug';
 import { React } from 'react';
-import markSheets from '../service/markSheets';
 import addFields from '../service/studentManager';
 import tableData from './TableData';
 import tableHeader from './TableHeader';
@@ -17,8 +17,10 @@ const headings = [
 	'Rank',
 ];
 
-const SimpleTable = () =>
-	<div>
+const SimpleTable = (context) => {
+	const { state: { currentMarksheet }} = context;
+
+	return <div>
 		<h1>Marksheet</h1>
 		<table className="tableStyle">
 			<thead>
@@ -27,11 +29,10 @@ const SimpleTable = () =>
 				</tr>
 			</thead>
 			<tbody>
-				{
-					addFields(markSheets).map(tableData)
-				}
+				{addFields(peek(currentMarksheet)).map(tableData)}
 			</tbody>
 		</table>
 	</div>;
+};
 
 export default SimpleTable;
