@@ -2,12 +2,12 @@ import React from 'react';
 
 const Add = (context) => {
 	const { state, setState } = context;
-	const { currentMarksheet, marks } = state;
+	const { currentMarksheet, markLists } = state;
 
 	return <div>
 		<button onClick={ () => setState({
 			...state,
-			currentMarksheet: [...currentMarksheet, marks],
+			markLists: [...markLists, currentMarksheet],
 		}) }
 		> Add</button>
 	</div>;

@@ -1,9 +1,8 @@
-/* eslint-disable max-lines-per-function */
 import React from 'react';
 
 const Input = (context) => {
 	const { state, setState, config: { headers }} = context;
-	const { marks } = state;
+	const { currentMarksheet } = state;
 
 	return headers.map((header, key) => <span key={ key }>
 		<label>{header}</label>
@@ -12,7 +11,10 @@ const Input = (context) => {
 			style={ { width: '60px' } }
 			onChange={ (event) => setState({
 				...state,
-				marks: { ...marks, [header]: event.target.value },
+				currentMarksheet: {
+					...currentMarksheet,
+					[header]: event.target.value,
+				},
 			}) }
 		/>
 	</span>);

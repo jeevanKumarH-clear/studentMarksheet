@@ -6,8 +6,8 @@ import SimpleTable from './components/simpleTable';
 import markSheets from './service/markSheets';
 
 const initialMarks = {
-	currentMarksheet: markSheets,
-	marks: {
+	markLists: markSheets,
+	currentMarksheet: {
 		rollNo: '',
 		name: '',
 		tamil: '',

@@ -1,4 +1,3 @@
-import { peek } from '@laufire/utils/debug';
 import { React } from 'react';
 import addFields from '../service/studentManager';
 import tableData from './TableData';
@@ -18,7 +17,7 @@ const headings = [
 ];
 
 const SimpleTable = (context) => {
-	const { state: { currentMarksheet }} = context;
+	const { state: { markLists }} = context;
 
 	return <div>
 		<h1>Marksheet</h1>
@@ -29,7 +28,7 @@ const SimpleTable = (context) => {
 				</tr>
 			</thead>
 			<tbody>
-				{addFields(peek(currentMarksheet)).map(tableData)}
+				{addFields(markLists).map(tableData)}
 			</tbody>
 		</table>
 	</div>;
