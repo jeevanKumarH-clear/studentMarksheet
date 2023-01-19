@@ -72,7 +72,7 @@ const SimpleStyles = () => {
 			<span style={ numberColumnStyle }>Science</span>
 			<span style={ numberColumnStyle }>Social</span>
 		</div>
-		<div>{lines}</div>;
+		<div>{lines}</div>
 	</div>;
 };
 

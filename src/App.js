@@ -4,7 +4,7 @@ import SimpleTable from './components/simpleTable';
 
 const App = () =>
 	<div className="App" role="App">
-		<SimpleTable/>;
+		<SimpleTable/>
 	</div>;
 
 export default App;
